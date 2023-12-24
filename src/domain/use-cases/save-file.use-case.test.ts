@@ -23,7 +23,7 @@ describe('SaveFileUseCase', () => {
     if ( outputFolderExists ) fs.rmSync('outputs', { recursive: true });
       
     const customOutputFolderExists = fs.existsSync(customOptions.fileDestination);
-    if ( customOutputFolderExists ) fs.rmSync(customOptions.fileDestination, { recursive: true });
+    if ( customOutputFolderExists ) fs.rmSync('custom-outputs', { recursive: true });
     
   });
 
